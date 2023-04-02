@@ -1,10 +1,13 @@
 {
   "name": "fly-aws-mastering",
   "version": "0.0.0",
+  "author": "DHN Chandan",
+  "license": "MIT",
   "private": true,
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "packages/*",
+    "aws/*"
   ],
   "scripts": {
     "build": "turbo run build",
@@ -13,13 +16,13 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "eslint-config-custom": "workspace:*",
+    "@fly-lab/eslint-config": "latest",
+    "@fly-lab/tsconfig": "latest",
     "prettier": "latest",
     "turbo": "latest"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
   },
-  "dependencies": {},
   "packageManager": "pnpm@8.1.0"
 }
