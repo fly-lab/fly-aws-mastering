@@ -1,0 +1,4 @@
+{
+  "extends": "@fly-lab/tsconfig/node.json",
+//  "exclude": ["packages"]
+}
